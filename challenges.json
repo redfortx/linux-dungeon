@@ -1,0 +1,26 @@
+{
+  "count": 3,
+  "challenges": [
+    {
+      "id": 0,
+      "title": "Level 1: Base - Ground Zero",
+      "script": "0.sh",
+      "brief": "0.md",
+      "default_flag": "FLAG{dungeon_basics_unlocked}"
+    },
+    {
+      "id": 1,
+      "title": "Level 2: Intermediate - The Path",
+      "script": "1.sh",
+      "brief": "1.md",
+      "default_flag": "FLAG{dungeon_intermediate_pass}"
+    },
+    {
+      "id": 2,
+      "title": "Level 3: Advanced - The Core",
+      "script": "2.sh",
+      "brief": "2.md",
+      "default_flag": "FLAG{dungeon_advanced_master}"
+    }
+  ]
+}
