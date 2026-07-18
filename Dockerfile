@@ -30,12 +30,14 @@ WORKDIR /app
 
 # Copy files
 COPY . /app
+COPY src/scripts/entry.sh /opt/entry.sh
 
 # Symlink web application to Apache document root
 RUN rm -rf /var/www/html && ln -s /app/src/web /var/www/html
 
 # Grant execution rights on scripts
 RUN chmod +x /app/src/scripts/entry.sh
+RUN chmod +x /opt/entry.sh
 RUN chmod +x /app/scripts/*.sh
 
-ENTRYPOINT ["/bin/bash", "/app/src/scripts/entry.sh"]
+ENTRYPOINT ["/bin/bash", "/opt/entry.sh"]
